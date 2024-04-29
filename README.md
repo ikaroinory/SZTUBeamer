@@ -25,6 +25,10 @@ git clone https://github.com/ikaroinory/SZTUBeamer.git
 
 - hidenav：隐藏导航栏
 - bdi：显示大数据与互联网学院Logo
+- cep：显示工程物理学院Logo
+- cop：显示药学院Logo
+- nmne：显示新材料与新能源学院Logo
+- sgmi：显示中德智能制造学院Logo
 - 兼容其他beamer类选项
 
 ### 命令

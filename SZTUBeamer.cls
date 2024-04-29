@@ -23,8 +23,17 @@
 
 \def\bool@hideNav{false}
 \DeclareOption{hideNav}{\def\bool@hideNav{true}}
-\def\bool@bdi{false}
+
+\def\bool@bdi{false}                        % 大数据与互联网学院
 \DeclareOption{bdi}{\def\bool@bdi{true}}
+\def\bool@cep{false}                        % 工程物理学院
+\DeclareOption{cep}{\def\bool@cep{true}}
+\def\bool@cop{false}                        % 药学院
+\DeclareOption{cop}{\def\bool@cop{true}}
+\def\bool@nmne{false}                       % 新材料与新能源学院
+\DeclareOption{nmne}{\def\bool@nmne{true}}
+\def\bool@sgmi{false}                       % 中德智能制造学院
+\DeclareOption{sgmi}{\def\bool@sgmi{true}}
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{ctexbeamer}}
 \ProcessOptions\relax
@@ -215,7 +224,6 @@
 \captionsetup[algorithm]{
 	format   = plain,
 	labelsep = quad,
-	% font={song,sfive},   % 图的字体, 宋体小五
 	position = top
 }
 \RenewDocumentCommand{\algorithmicrequire}{}{\bfseries 输入：}
@@ -228,12 +236,13 @@
 %----------------------------------------------------------------------------------------------------%
 \titlegraphic{
     \includegraphics[height = 0.5cm]{asserts/SZTU.png}
-    \ifthenelse{\equal{\bool@bdi}{true}}{\includegraphics[height = 0.5cm]{asserts/BDI.png}}{}
+    \ifthenelse{\equal{\bool@bdi}{true}}{\hspace{1ex}\includegraphics[height = 0.5cm]{asserts/BDI.png}}{}
+    \ifthenelse{\equal{\bool@cep}{true}}{\hspace{1ex}\includegraphics[height = 0.5cm]{asserts/CEP.png}}{}
+    \ifthenelse{\equal{\bool@cop}{true}}{\hspace{1ex}\includegraphics[height = 0.5cm]{asserts/COP.png}}{}
+    \ifthenelse{\equal{\bool@nmne}{true}}{\hspace{1ex}\includegraphics[height = 0.5cm]{asserts/NMNE.png}}{}
+    \ifthenelse{\equal{\bool@sgmi}{true}}{\hspace{1ex}\includegraphics[height = 0.5cm]{asserts/SGMI.png}}{}
 }
-% \logo{
-%     \includegraphics[height = 0.5cm]{asserts/sztu_logo.png}
-%     \includegraphics[height = 0.5cm]{asserts/bdi_logo.png}
-% }
+
 % \logo{
 %     \begin{tikzpicture}[overlay, remember picture]
 %         \node[left = 0cm] at (current page.20){

@@ -132,7 +132,7 @@
 \setCJKsansfont[AutoFakeBold]{STKaiti}
 \setsansfont{Times New Roman}
 
-\setbeamerfont{title}{family=\kaishu}
+\setbeamerfont{title}{family=\kaishu, series=\bfseries}
 \setbeamerfont{author}{family=\kaishu}
 \setbeamerfont{institute}{family=\kaishu}
 \setbeamerfont{date}{parent=institute}

@@ -128,8 +128,8 @@
 %
 %----------------------------------------------------------------------------------------------------%
 % \usefonttheme{serif}
-\setCJKmainfont{STKaiti}
-\setCJKsansfont{STKaiti}
+\setCJKmainfont[AutoFakeBold]{STKaiti}
+\setCJKsansfont[AutoFakeBold]{STKaiti}
 \setsansfont{Times New Roman}
 
 \setbeamerfont{title}{family=\kaishu}
@@ -226,8 +226,8 @@
 	labelsep = quad,
 	position = top
 }
-\RenewDocumentCommand{\algorithmicrequire}{}{\bfseries 输入：}
-\RenewDocumentCommand{\algorithmicensure}{}{\bfseries 输出：}
+\RenewDocumentCommand{\algorithmicrequire}{}{\textbf{输入：}}
+\RenewDocumentCommand{\algorithmicensure}{}{\textbf{输出：}}
 
 %----------------------------------------------------------------------------------------------------%
 %

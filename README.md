@@ -48,6 +48,8 @@ git clone https://github.com/ikaroinory/SZTUBeamer.git
 
 页面：
 
+- `\cover`：封面
+- `\toc`：目录
 - `\endpage[args]{[text]}`：显示附带Logo的结束页。可选参数：
     - `show`：显示作者和指导者
 

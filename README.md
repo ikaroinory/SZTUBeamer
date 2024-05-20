@@ -37,9 +37,9 @@ git clone https://github.com/ikaroinory/SZTUBeamer.git
 
 - `\title{<title>}`：设置标题
 - `\institute{<institute>}`：设置所属机构
-- `\author<author>`：设置作者
+- `\author{<author>}`：设置作者
 - `\supervisor{<supervisor>}`：设置指导者
-- `\reportDate{<reportDate>}`：设置报告日期
+- `\reportDate{<year>}{<month>}{<day>}`：设置报告日期
 
 定制：
 

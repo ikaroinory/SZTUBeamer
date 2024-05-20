@@ -234,20 +234,20 @@
 % -> Template Settings
 %
 %----------------------------------------------------------------------------------------------------%
-\titlegraphic{
-    \includegraphics[height = 0.5cm]{asserts/SZTU.png}
-    \ifthenelse{\equal{\bool@bdi}{true}}{\hspace{1ex}\includegraphics[height = 0.5cm]{asserts/BDI.png}}{}
-    \ifthenelse{\equal{\bool@cep}{true}}{\hspace{1ex}\includegraphics[height = 0.5cm]{asserts/CEP.png}}{}
-    \ifthenelse{\equal{\bool@cop}{true}}{\hspace{1ex}\includegraphics[height = 0.5cm]{asserts/COP.png}}{}
-    \ifthenelse{\equal{\bool@nmne}{true}}{\hspace{1ex}\includegraphics[height = 0.5cm]{asserts/NMNE.png}}{}
-    \ifthenelse{\equal{\bool@sgmi}{true}}{\hspace{1ex}\includegraphics[height = 0.5cm]{asserts/SGMI.png}}{}
+\titlegraphic{%
+    \includegraphics[height = 0.5cm]{asserts/SZTU.png}%
+    \ifthenelse{\equal{\bool@bdi}{true}}{\hspace{1ex}\includegraphics[height = 0.5cm]{asserts/BDI.png}}{}%
+    \ifthenelse{\equal{\bool@cep}{true}}{\hspace{1ex}\includegraphics[height = 0.5cm]{asserts/CEP.png}}{}%
+    \ifthenelse{\equal{\bool@cop}{true}}{\hspace{1ex}\includegraphics[height = 0.5cm]{asserts/COP.png}}{}%
+    \ifthenelse{\equal{\bool@nmne}{true}}{\hspace{1ex}\includegraphics[height = 0.5cm]{asserts/NMNE.png}}{}%
+    \ifthenelse{\equal{\bool@sgmi}{true}}{\hspace{1ex}\includegraphics[height = 0.5cm]{asserts/SGMI.png}}{}%
 }
 
 % \logo{
 %     \begin{tikzpicture}[overlay, remember picture]
 %         \node[left = 0cm] at (current page.20){
-%             \includegraphics[height = 0.5cm]{asserts/sztu_logo.png}
-%             \includegraphics[height = 0.5cm]{asserts/bdi_logo.png}
+%             \includegraphics[height = 0.5cm]{asserts/SZTU.png}
+%             \includegraphics[height = 0.5cm]{asserts/BDI.png}
 %         };
 %     \end{tikzpicture}
 % }
